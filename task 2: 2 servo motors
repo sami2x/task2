@@ -1,0 +1,26 @@
+#include <Servo.h>
+Servo motor1 ;
+Servo motor2 ;
+
+
+void setup()
+{
+   motor1.attach(6);
+   motor2.attach(4); 
+
+}
+
+void loop(){ 
+   motor2.write(145);
+   motor1.write(90);
+   delay(2000);
+   motor1.write(45);
+   motor2.write(60);
+   delay(2000); 
+   motor1.write(130);
+   motor2.write(100);
+   delay(2000); 
+   motor1.write(100);
+   motor2.write(170);
+   delay(2000);
+}
